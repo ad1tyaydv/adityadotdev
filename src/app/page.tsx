@@ -1,6 +1,8 @@
 import ContactSection from "../components/ContactSection";
 import EducationSection from "../components/EducationSection";
 import ProjectsSection from "../components/ProjectsSection";
+import WorkExperience from "../components/WorkExperience";
+import Skills from "../components/Skills";
 
 export default function Home() {
   return (
@@ -24,51 +26,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
-          <h2 className="text-xl font-semibold mb-4">Skills</h2>
-          <div className="flex flex-wrap gap-2">
-            {[
-              "React",
-              "Next.js",
-              "TypeScript",
-              "Node.js",
-              "MongoDB",
-              "JavaScript",
-              "Postman",
-              "Clerk",
-              "React Native",
-              "NeonDB",
-              "Tailwind CSS",
-              "AWS",
-              "Express.js",
-              "Figma",
-              "PostgreSQL",
-              "Shadcn UI",
-            ].map((skill) => (
-              <span
-                key={skill}
-                className="px-3 py-1 bg-[#1c1c1c] text-sm rounded-md border border-gray-700 text-gray-200"
-              >
-                {skill}
-              </span>
-            ))}
-          </div>
-        </section>
-
-        <section>
-          <h2 className="text-xl font-semibold mb-4">Work Experience</h2>
-          <div className="bg-[#1c1c1c] border border-gray-700 p-4 rounded-md shadow-sm">
-            <h3 className="font-bold text-lg text-white">Stealth Startup</h3>
-            <p className="text-sm text-gray-400">
-              Learing Currently
-            </p>
-            <p className="mt-2 text-gray-300 text-sm">
-              Building the company from scratch, handling all React/Next.js
-              frontend, integrating APIs, managing user auth with Clerk, and
-              working on mobile architecture using React Native.
-            </p>
-          </div>
-        </section>
+        <Skills />
+        <WorkExperience />
         <ProjectsSection />
         <EducationSection />
         <ContactSection />
