@@ -71,6 +71,7 @@ export default function Home() {
         </section>
         <ProjectsSection />
         <EducationSection />
+        <ContactSection />
       </div>
     </main>
   );
