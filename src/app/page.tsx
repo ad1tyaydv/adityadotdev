@@ -1,3 +1,5 @@
+import ProjectsSection from "../components/ProjectsSection";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#0e0e0e] px-4 py-8 sm:px-6 md:px-10 flex justify-center">
@@ -65,6 +67,7 @@ export default function Home() {
             </p>
           </div>
         </section>
+        <ProjectsSection />
       </div>
     </main>
   );
