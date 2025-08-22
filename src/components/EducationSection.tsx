@@ -7,8 +7,7 @@ interface EducationItem {
 
 const educationList: EducationItem[] = [
   {
-    name: "Maharaja Agrasen Institute of Technology",
-    degree: "B.Tech in Computer Science",
+    name: "ST. Mary's Secondary School",
     year: "2023 - 2027",
     logo: "/education/mait.png",
   },
