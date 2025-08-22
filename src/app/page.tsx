@@ -1,3 +1,5 @@
+import ContactSection from "../components/ContactSection";
+import EducationSection from "../components/EducationSection";
 import ProjectsSection from "../components/ProjectsSection";
 
 export default function Home() {
@@ -68,6 +70,7 @@ export default function Home() {
           </div>
         </section>
         <ProjectsSection />
+        <EducationSection />
       </div>
     </main>
   );
