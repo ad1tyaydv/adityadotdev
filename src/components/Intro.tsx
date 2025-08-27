@@ -1,49 +1,47 @@
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
-export default function IntroSection() {
+export default function Intro() {
   return (
-    <section className="flex flex-col md:flex-row items-center gap-6">
-      <img
-        src="/avatar.jpg"
-        alt="Profile"
-        className="w-24 h-24 rounded-full object-cover border border-gray-600"
-      />
-      <div className="text-center md:text-left">
-        <h1 className="text-3xl font-bold">Hi, I'm Aditya</h1>
-        <div className="flex items-center justify-center md:justify-start gap-2 mt-1 text-sm text-gray-400">
-          <p>@adityadotdev</p>
-          <a
-            href="https://github.com/ad1tyaydv"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/adityaydvdev/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white"
-          >
-            <FaLinkedin />
-          </a>
-          <a
-            href="https://twitter.com/adityadotdev"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white"
-          >
-            <FaTwitter />
-          </a>
-        </div>
-
-        <p className="mt-3 text-gray-300">
-          A 18-year-old self-taught developer from India who loves building
-          things, primarily using{" "}
-          <span className="font-semibold text-yellow-400">JavaScript</span> and modern frameworks.
-        </p>
+    <div className="text-center px-4 py-8">
+      <div className="flex justify-center">
+        <img
+          src="https://assets.leetcode.com/users/Adiydv/avatar_1728301728.png"
+          alt="Aditya Yadav"
+          className="w-28 h-28 rounded-full object-cover border"
+        />
       </div>
-    </section>
+
+      <h1 className="mt-4 text-2xl font-bold">Aditya Yadav</h1>
+      <p className="text-gray-500">Developer</p>
+
+      <div className="flex justify-center gap-6 mt-4 text-xl text-gray-700">
+        <a
+          href="https://github.com/ad1tyaydv"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <FaGithub />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/adityaydvdev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <FaLinkedin />
+        </a>
+        <a
+          href="https://x.com/adityadotdev"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Twitter / X"
+        >
+          <FaXTwitter />
+        </a>
+      </div>
+
+      <hr className="mt-6 border-t border-gray-300 max-w-xs mx-auto" />
+    </div>
   );
 }

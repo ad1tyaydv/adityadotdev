@@ -1,30 +1,38 @@
 export default function ContactSection() {
   return (
-    <section className="px-4 py-16 sm:px-6 md:px-10 max-w-4xl mx-auto text-white border-t border-gray-700 text-center">
-      <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
-      <p className="text-gray-400 mb-4">
-        Want to chat? Just shoot me a dm via{" "}
-        <span className="bg-[#1c1c1c] px-2 py-1 rounded border border-gray-600 inline-block">
-          📧 Gmail
-        </span>{" "}
-        or reach out on{" "}
-        <span className="bg-[#1c1c1c] px-2 py-1 rounded border border-gray-600 inline-block">
-          ✖ Twitter
-        </span>
+    <section className="text-center px-4 py-10" id="contact">
+      <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
+      <p className="text-gray-600 mb-6">
+        Whether you want to discuss a project or just say hi, my inbox is always open.
       </p>
 
-      <div className="mb-6">
-        <p className="text-gray-400 font-medium mb-2">Support my work</p>
-        <div className="flex justify-center gap-4 flex-wrap">
-          <span className="bg-[#1c1c1c] px-4 py-2 rounded border border-gray-600 text-sm">🪙 Solana</span>
-          <span className="bg-[#1c1c1c] px-4 py-2 rounded border border-gray-600 text-sm">💳 Paytm</span>
-          <span className="bg-[#1c1c1c] px-4 py-2 rounded border border-gray-600 text-sm">💸 PayPal</span>
-        </div>
+      <div className="space-y-2 text-gray-700">
+        <p>
+          Email:{" "}
+          <a
+            href="mailto:adityaydvdev@gmail.com"
+            className="text-blue-600 hover:underline"
+          >
+            adityaydv12890@gmail.com
+          </a>
+        </p>
+        <p>
+          X:{" "}
+          <a
+            href="https://x.com/adityadotdev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            adityadotdev
+          </a>
+        </p>
+        <p>
+          📍 Location: India
+        </p>
       </div>
 
-      <p className="text-sm text-gray-500 mt-6 italic">
-        Stay hungry, stay foolish
-      </p>
+      <hr className="mt-8 border-t border-gray-300 max-w-xs mx-auto" />
     </section>
   );
 }

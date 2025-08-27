@@ -1,106 +1,67 @@
-interface Project {
-  title: string;
-  year: string;
-  description: string;
-  image: string;
-  tech: string[];
-  links: { label: string; url: string }[];
-}
-
-const projects: Project[] = [
-  {
-    title: "Not-A-Basic-Chat-App",
-    year: "2024",
-    description:
-      "Built a real-time messaging app with AI-powered text-to-speech, speech-to-text, and smart auto-complete using MERN, Socket.io, and Chakra UI.",
-    image: "/projects/chat-app.png",
-    tech: [
-      "MongoDB",
-      "Express.js",
-      "React",
-      "Node.js",
-      "GSAP",
-      "TailwindCSS",
-      "+7 more",
-    ],
-    links: [
-      { label: "Website", url: "#" },
-      { label: "GitHub", url: "#" },
-      { label: "Demo", url: "#" },
-    ],
-  },
-  {
-    title: "Zracy – AI-Powered Social Media Experiment",
-    year: "2024",
-    description:
-      "An experimental Instagram-inspired social platform with an autonomous AI that posts content, moderates posts, and interacts with users through comments.",
-    image: "/projects/zracy.png",
-    tech: [
-      "React Native",
-      "Expo",
-      "NativeWind",
-      "Supabase",
-      "Clerk",
-      "Cloudinary",
-      "+1 more",
-    ],
-    links: [
-      { label: "GitHub", url: "#" },
-      { label: "Demo", url: "#" },
-    ],
-  },
-];
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 export default function ProjectsSection() {
+  const projects = [
+    {
+      title: "AI-Fiesta Opensource",
+      description:
+        "AI-Fiesta OpenSource is a multi-AI chat app that lets users send a single prompt to multiple AI models and compare their responses side by side.",
+      status: "Live",
+      link: "https://opensource-ai-fiesta.vercel.app/",
+    },
+    {
+      title: "ASK.AI",
+      description:
+        "An AI chat app like Gemini.",
+      status: "",
+      link: "https://ask-ai-mu.vercel.app/",
+    },
+    {
+      title: "Password Generator",
+      description:
+        "A password generating website which generates password in just seconds. You have a variety of options to generate passwords. The passwords generated are not stored anywhere so you dont have to worry about your info.",
+      status: "Live",
+      link: "https://pass-generator-by-me.vercel.app/",
+    },
+    {
+      title: "Password Saver",
+      description:
+        "A password saver website which saves all your password at one place. So no need to search them when you need. Just save all your passwords at your finger tips.",
+      status: "Live",
+      link: "https://password-saver-teal.vercel.app/",
+    },
+  ];
+
   return (
-    <section className="px-4 py-16 sm:px-6 md:px-10 max-w-6xl mx-auto text-white">
-      <h2 className="text-3xl font-bold text-center mb-2">My Projects</h2>
-      <p className="text-center text-gray-400 mb-10">
-        From Frontend Magic to Backend Systems
-      </p>
+    <div className="max-w-3xl mx-auto px-4 py-10">
+      <h2 className="text-xl font-semibold mb-4">Projects</h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className="bg-[#121212] border border-gray-700 rounded-md p-4 shadow hover:shadow-lg transition duration-300"
-          >
-            <img
-              src={project.image}
-              alt={project.title}
-              className="rounded mb-4 h-48 object-cover w-full"
-            />
+      <div className="space-y-8">
+        {projects.map((project) => (
+          <div key={project.title}>
+            <div className="flex items-center gap-2">
+              <h3 className="text-lg font-semibold">{project.title}</h3>
 
-            <h3 className="font-semibold text-lg">{project.title}</h3>
-            <p className="text-sm text-gray-400">{project.year}</p>
-            <p className="mt-2 text-sm text-gray-300 line-clamp-4">{project.description}</p>
-
-            <div className="mt-4 flex flex-wrap gap-2">
-              {project.tech.map((tech, i) => (
-                <span
-                  key={i}
-                  className="bg-[#1c1c1c] border border-gray-600 text-gray-300 text-xs px-2 py-1 rounded"
-                >
-                  {tech}
+              {project.status === "In Progress" && (
+                <span className="bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded-full">
+                  In Progress
                 </span>
-              ))}
-            </div>
+              )}
 
-            <div className="mt-4 flex gap-3 flex-wrap">
-              {project.links.map((link, j) => (
-                <a
-                  key={j}
-                  href={link.url}
-                  target="_blank"
-                  className="text-sm bg-gray-800 text-white border border-gray-600 px-3 py-1 rounded hover:bg-white hover:text-black transition"
-                >
-                  {link.label}
-                </a>
-              ))}
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-500 hover:text-black"
+              >
+                <FaExternalLinkAlt size={14} />
+              </a>
             </div>
+            <p className="text-gray-600 mt-1 text-sm">{project.description}</p>
           </div>
         ))}
       </div>
-    </section>
+      <hr className="mt-6 border-t border-gray-300" />
+    </div>
   );
 }
