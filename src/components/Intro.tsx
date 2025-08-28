@@ -5,7 +5,7 @@ export default function Intro() {
   return (
     <div className="text-center px-4 py-8">
       <div className="flex justify-center">
-        <Image
+        <img
           src="https://assets.leetcode.com/users/Adiydv/avatar_1728301728.png"
           alt="Aditya Yadav"
           className="w-28 h-28 rounded-full object-cover border"
