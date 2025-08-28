@@ -13,7 +13,7 @@ export default function ContactSection() {
             href="mailto:adityaydvdev@gmail.com"
             className="text-blue-600 hover:underline"
           >
-            adityaydv12890@gmail.com
+            adityadotdev@gmail.com
           </a>
         </p>
         <p>
