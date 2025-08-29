@@ -13,7 +13,7 @@ export default function LearningSection() {
   ];
 
   return (
-    <div className="max-w-2xl mx-auto px-4 py-8">
+    <div className="max-w-2xl mx-auto px-4 py-5">
       <h2 className="text-lg font-semibold mb-4">From where I learn:</h2>
 
       <div className="space-y-6">

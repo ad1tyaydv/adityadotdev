@@ -1,3 +1,4 @@
+import { FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 export default function ProjectsSection() {
@@ -7,33 +8,37 @@ export default function ProjectsSection() {
       description:
         "AI-Fiesta OpenSource is a multi-AI chat app that lets users send a single prompt to multiple AI models and compare their responses side by side.",
       status: "Live",
-      link: "https://opensource-ai-fiesta.vercel.app/",
+      link1: "https://github.com/ad1tyaydv",
+      link2: "https://opensource-ai-fiesta.vercel.app/",
     },
     {
       title: "ASK.AI",
       description:
         "An AI chat app like Gemini.",
       status: "",
-      link: "https://ask-ai-mu.vercel.app/",
+      link1: "https://github.com/ad1tyaydv",
+      link2: "https://ask-ai-mu.vercel.app/",
     },
     {
       title: "Password Generator",
       description:
         "A password generating website which generates password in just seconds. You have a variety of options to generate passwords. The passwords generated are not stored anywhere so you dont have to worry about your info.",
       status: "Live",
-      link: "https://pass-generator-by-me.vercel.app/",
+      link1: "https://github.com/ad1tyaydv",
+      link2: "https://pass-generator-by-me.vercel.app/",
     },
     {
       title: "Password Saver",
       description:
         "A password saver website which saves all your password at one place. So no need to search them when you need. Just save all your passwords at your finger tips.",
       status: "Live",
-      link: "https://password-saver-teal.vercel.app/",
+      link1: "https://github.com/ad1tyaydv",
+      link2: "https://password-saver-teal.vercel.app/",
     },
   ];
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-10">
+    <div className="max-w-3xl mx-auto px-4 py-5">
       <h2 className="text-xl font-semibold mb-4">Projects</h2>
 
       <div className="space-y-8">
@@ -47,9 +52,18 @@ export default function ProjectsSection() {
                   In Progress
                 </span>
               )}
+              
+              <a
+                href={project.link1}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-500 hover:text-black"
+              >
+                <FaGithub size={18} />
+              </a>
 
               <a
-                href={project.link}
+                href={project.link2}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-black"
