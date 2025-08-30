@@ -3,6 +3,7 @@ import ProjectsSection from "../components/ProjectsSection";
 import About from "../components/about";
 import IntroSection from "../components/Intro";
 import LearningSection from "../components/LearningSection";
+import GitHubSection from "../components/githubSection";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <div className="w-full max-w-2xl space-y-10 text-black border border-gray-200 rounded-xl px-6 py-10 shadow-md">
         <IntroSection />
         <About />
+        <GitHubSection />
         <ProjectsSection />
         <LearningSection />
         <ContactSection />
