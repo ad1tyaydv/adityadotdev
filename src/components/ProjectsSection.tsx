@@ -25,7 +25,7 @@ export default function ProjectsSection() {
         "A password generating website which generates password in just seconds. You have a variety of options to generate passwords. The passwords generated are not stored anywhere so you dont have to worry about your info.",
       status: "Live",
       link1: "https://github.com/ad1tyaydv",
-      link2: "https://pass-generator-by-me.vercel.app/",
+      link2: "https://cookpass.vercel.app/",
     },
     {
       title: "Password Saver",
