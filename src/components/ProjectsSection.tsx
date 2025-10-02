@@ -4,27 +4,35 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 export default function ProjectsSection() {
   const projects = [
     {
+      title: "Tamatar AI",
+      description:
+        "An AI app that gives all the answers of your quesions and ask as much questions as much as you can at free of cost, a great user experience, access all your recent chats",
+      status: "Live",
+      link1: "https://github.com/ad1tyaydv/Tamatar_AI",
+      link2: "https://tamatar-ai.vercel.app/",
+    },
+    {
       title: "AI-Fiesta Opensource",
       description:
         "AI-Fiesta OpenSource is a multi-AI chat app that lets users send a single prompt to multiple AI models and compare their responses side by side.",
       status: "Live",
-      link1: "https://github.com/ad1tyaydv",
+      link1: "https://github.com/ad1tyaydv/ai-fiesta-opensource",
       link2: "https://opensource-ai-fiesta.vercel.app/",
     },
     {
-      title: "ASK.AI",
+      title: "Card Generator",
       description:
-        "An AI chat app like Gemini.",
-      status: "",
-      link1: "https://github.com/ad1tyaydv",
-      link2: "https://ask-ai-mu.vercel.app/",
+        "A card generator app which generates a fun card which you can download and share with your friends.",
+      status: "Live",
+      link1: "https://github.com/ad1tyaydv/business-card",
+      link2: "https://generate-card-now.vercel.app/",
     },
     {
       title: "Password Generator",
       description:
         "A password generating website which generates password in just seconds. You have a variety of options to generate passwords. The passwords generated are not stored anywhere so you dont have to worry about your info.",
       status: "Live",
-      link1: "https://github.com/ad1tyaydv",
+      link1: "https://github.com/ad1tyaydv/Password-Generator",
       link2: "https://cookpass.vercel.app/",
     },
     {
@@ -32,7 +40,7 @@ export default function ProjectsSection() {
       description:
         "A password saver website which saves all your password at one place. So no need to search them when you need. Just save all your passwords at your finger tips.",
       status: "Live",
-      link1: "https://github.com/ad1tyaydv",
+      link1: "https://github.com/ad1tyaydv/password-saver",
       link2: "https://password-saver-teal.vercel.app/",
     },
   ];

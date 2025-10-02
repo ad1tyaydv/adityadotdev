@@ -24,7 +24,7 @@ export default function Intro() {
           <h1 className={`text-4xl font-bold ${montserrat.className}`}>
             Aditya Yadav
           </h1>
-          <p className="text-gray-500 text-xl mt-1">Developer</p>
+          <p className="text-gray-500 text-xl mt-1">Full Stack Developer</p>
 
           <div className="flex justify-center md:justify-start gap-6 mt-4 text-xl text-gray-700">
             <a
