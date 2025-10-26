@@ -6,9 +6,9 @@ export default function About() {
       <h2 className="text-xl font-semibold mb-2">About</h2>
 
       <p className="text-gray-600 leading-relaxed">
-        Hi, I&apos;m Aditya — an 18-year-old 12th grader passionate about web development 
+        Hi, I&apos;m Aditya — an 17-year-old 12th grader passionate about web development 
         and technology. I love building websites, exploring new tools, and improving 
-        my skills daily. I also have a strong foundation in DSA and enjoy competitive 
+        my skills daily. I also have a foundation in DSA and enjoy competitive 
         programming.
       </p>
 
