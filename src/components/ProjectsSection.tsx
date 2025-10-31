@@ -1,12 +1,11 @@
-import { FaGithub } from "react-icons/fa";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 export default function ProjectsSection() {
   const projects = [
     {
       title: "Tamatar AI",
       description:
-        "An AI app that gives all the answers of your quesions and ask as much questions as much as you can at free of cost, a great user experience, access all your recent chats",
+        "An AI app that gives all the answers of your questions and lets you ask as many as you want for free, featuring great UX and recent chat access.",
       status: "Live",
       link1: "https://github.com/ad1tyaydv/Tamatar_AI",
       link2: "https://tamatar-ai.vercel.app/",
@@ -22,7 +21,7 @@ export default function ProjectsSection() {
     {
       title: "Card Generator",
       description:
-        "A card generator app which generates a fun card which you can download and share with your friends.",
+        "A fun card generator app that lets you create, download, and share personalized cards easily.",
       status: "Live",
       link1: "https://github.com/ad1tyaydv/business-card",
       link2: "https://generate-card-now.vercel.app/",
@@ -30,23 +29,15 @@ export default function ProjectsSection() {
     {
       title: "Password Generator",
       description:
-        "A password generating website which generates password in just seconds. You have a variety of options to generate passwords. The passwords generated are not stored anywhere so you dont have to worry about your info.",
+        "A password generator website offering strong and customizable password options. No data storage — full privacy ensured.",
       status: "Live",
       link1: "https://github.com/ad1tyaydv/Password-Generator",
       link2: "https://cookpass.vercel.app/",
     },
-    {
-      title: "Password Saver",
-      description:
-        "A password saver website which saves all your password at one place. So no need to search them when you need. Just save all your passwords at your finger tips.",
-      status: "Live",
-      link1: "https://github.com/ad1tyaydv/password-saver",
-      link2: "https://password-saver-teal.vercel.app/",
-    },
   ];
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-5">
+    <div className="max-w-3xl mx-auto px-4 py-5 bg-white text-black dark:bg-black dark:text-white transition-colors duration-300">
       <h2 className="text-xl font-semibold mb-4">Projects</h2>
 
       <div className="space-y-8">
@@ -56,16 +47,16 @@ export default function ProjectsSection() {
               <h3 className="text-lg font-semibold">{project.title}</h3>
 
               {project.status === "In Progress" && (
-                <span className="bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded-full">
+                <span className="bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 text-xs font-semibold px-2 py-1 rounded-full">
                   In Progress
                 </span>
               )}
-              
+
               <a
                 href={project.link1}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-500 hover:text-black"
+                className="text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
               >
                 <FaGithub size={18} />
               </a>
@@ -74,16 +65,19 @@ export default function ProjectsSection() {
                 href={project.link2}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-500 hover:text-black"
+                className="text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
               >
                 <FaExternalLinkAlt size={14} />
               </a>
             </div>
-            <p className="text-gray-600 mt-1 text-sm">{project.description}</p>
+            <p className="text-gray-700 dark:text-gray-300 mt-1 text-sm leading-relaxed">
+              {project.description}
+            </p>
           </div>
         ))}
       </div>
-      <hr className="mt-6 border-t border-gray-300" />
+
+      <hr className="mt-6 border-t border-gray-300 dark:border-gray-700" />
     </div>
   );
 }
