@@ -17,7 +17,7 @@ export default function Intro() {
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-left mt-8">
         <div className="order-1 md:order-2 md:w-1/2 flex justify-center">
           <img
-            src="https://assets.leetcode.com/users/Adiydv/avatar_1728301728.png"
+            src="image.png"
             alt="Aditya Yadav"
             className="w-44 h-44 rounded-full object-cover border border-gray-300 dark:border-gray-700"
           />
