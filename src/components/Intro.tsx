@@ -9,7 +9,7 @@ const montserrat = Montserrat({
 
 export default function Intro() {
   return (
-    <div className="px-4 py-8 relative bg-white text-black dark:bg-black dark:text-white transition-colors duration-300">
+    <div className="px-4 py-8 relative bg-white text-black dark:bg-[#19181A] dark:text-white transition-colors duration-300">
       <div className="absolute top-4 right-4">
         <ModeToggle />
       </div>

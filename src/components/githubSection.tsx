@@ -4,7 +4,7 @@ export default async function ProofOfWorkSection() {
   const contributions = await getContributionCount("ad1tyaydv");
 
   return (
-    <section className="py-6 px-4 text-center bg-white text-black dark:bg-black dark:text-white transition-colors duration-300">
+    <section className="py-6 px-4 text-center bg-white text-black dark:bg-[#19181A] dark:text-white transition-colors duration-300">
       <h2 className="text-3xl font-bold mb-2">Proof of Work</h2>
 
       <div className="flex justify-center overflow-x-auto">

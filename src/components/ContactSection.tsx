@@ -2,7 +2,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="text-center px-4 py-5 bg-white text-black dark:bg-black dark:text-white transition-colors duration-300"
+      className="text-center px-4 py-5 bg-white text-black dark:bg-[#19181A] dark:text-white transition-colors duration-300"
     >
       <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
 
