@@ -1,3 +1,4 @@
+import { Subtitles } from "lucide-react";
 import { FaArrowRight } from "react-icons/fa6";
 
 export default function LearningSection() {
@@ -5,6 +6,10 @@ export default function LearningSection() {
     {
       title: "100xDevs - Cohort 3",
       subtitle: "Webdev & DevOps",
+    },
+    {
+      title: "Rohit Negi",
+      subtitle: "Data Structures & Algorithm",
     },
     {
       title: "",
