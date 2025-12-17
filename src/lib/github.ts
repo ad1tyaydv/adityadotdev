@@ -2,6 +2,28 @@ import fetch from "node-fetch";
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 
+type ContributionDay = {
+  date: string;
+  contributionCount: number;
+  color: string;
+};
+
+type Week = {
+  contributionDays: ContributionDay[];
+};
+
+type GitHubResponse = {
+  data: {
+    user: {
+      contributionsCollection: {
+        contributionCalendar: {
+          weeks: Week[];
+        };
+      };
+    };
+  };
+};
+
 export async function getContributionData(username: string) {
   const query = `
     query ($username: String!) {
@@ -30,21 +52,21 @@ export async function getContributionData(username: string) {
     body: JSON.stringify({ query, variables: { username } }),
   });
 
-  const data = await response.json() as any;
+  const data: GitHubResponse = await response.json() as GitHubResponse;
 
   const weeks = data.data.user.contributionsCollection.contributionCalendar.weeks;
-  const days = weeks.flatMap((week: any) => week.contributionDays);
+  const days = weeks.flatMap((week) => week.contributionDays);
 
   const nineMonthsAgo = new Date();
   nineMonthsAgo.setMonth(nineMonthsAgo.getMonth() - 9);
   nineMonthsAgo.setHours(0, 0, 0, 0);
 
   return days
-    .filter((day: any) => new Date(day.date) >= nineMonthsAgo)
-    .map((day: any) => ({
+    .filter((day) => new Date(day.date) >= nineMonthsAgo)
+    .map((day) => ({
       date: day.date,
       count: day.contributionCount,
-      level: getActivityLevel(day.contributionCount)
+      level: getActivityLevel(day.contributionCount),
     }));
 }
 
