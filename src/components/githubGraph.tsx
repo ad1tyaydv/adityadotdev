@@ -2,6 +2,12 @@
 
 import { ActivityCalendar } from "react-activity-calendar";
 
+type CalendarData = {
+  date: string;
+  count: number;
+  level: 0 | 1 | 2 | 3 | 4;
+};
+
 const nineMonthsAgo = new Date();
 nineMonthsAgo.setMonth(nineMonthsAgo.getMonth() - 9);
 nineMonthsAgo.setHours(0, 0, 0, 0);
@@ -15,7 +21,7 @@ export default function ProofOfWorkCalendar({ data }: { data: CalendarData[] }) 
       placeholderData.push({
         date: d.toISOString().split('T')[0],
         count: 0,
-        level: 0
+        level: 0,
       });
     }
     
@@ -45,7 +51,7 @@ export default function ProofOfWorkCalendar({ data }: { data: CalendarData[] }) 
         hideTotalCount={false}
         showWeekdayLabels
         theme={{
-          light: ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"],
+          light: ["#f0f0f0", "#c6e48b", "#7bc96f", "#239a3b", "#196127"], // updated light theme
           dark: ["#161B22", "#0E4429", "#006D32", "#26A641", "#39D353"],
         }}
         colorScheme="dark"
