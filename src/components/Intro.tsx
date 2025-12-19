@@ -2,19 +2,16 @@ import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { Montserrat } from "next/font/google";
 import { ModeToggle } from "@/helpers/theme-toggle-button";
 
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["600"],
-});
 
 export default function Intro() {
   return (
-    <div className="px-4 py-8 relative bg-white text-black dark:bg-[#19181A] dark:text-white transition-colors duration-300">
-      <div className="absolute top-4 right-4">
+    <div className="px-4 py-1 relative bg-white text-black dark:bg-[#19181A] dark:text-white transition-colors duration-300">
+      <div className="absolute top-0 right-4 flex">
         <ModeToggle />
       </div>
 
-      <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-left mt-8">
+
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-left">
         <div className="order-1 md:order-2 md:w-1/2 flex justify-center">
           <img
             src="image.png"
