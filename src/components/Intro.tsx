@@ -24,10 +24,10 @@ export default function Intro() {
         </div>
 
         <div className="order-2 md:order-1 md:w-1/2">
-          <h1 className={`text-4xl font-bold ${montserrat.className}`}>
+          <h1 className="text-4xl font-bold font-[AdityaYadav-font]">
             Aditya Yadav
           </h1>
-          <p className="text-gray-600 dark:text-gray-400 text-xl mt-1">
+          <p className="text-gray-600 font-[FullStackDeveloper-font] dark:text-gray-400 text-xl mt-1">
             Full Stack Developer
           </p>
 

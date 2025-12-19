@@ -3,7 +3,7 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 export default function ProjectsSection() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-5 bg-white text-black dark:bg-[#19181A] dark:text-white transition-colors duration-300">
-      <h2 className="text-xl font-semibold mb-4">Projects</h2>
+      <h2 className="text-2xl font-[Bebas Neue] font-semibold mb-2">Projects</h2>
 
       <div className="space-y-8">
 
@@ -19,7 +19,7 @@ export default function ProjectsSection() {
               <FaExternalLinkAlt size={14} />
             </a>
           </div>
-          <p className="text-gray-700 dark:text-gray-300 mt-1 text-sm leading-relaxed">
+          <p className="text-gray-700 Projectsfont dark:text-gray-300 mt-1 text-sm leading-relaxed">
             Create notes for studies or a post for X. Not even I can read them.
             All the content gets stored in db with full encryption, so no fear of data getting leaked.
           </p>
@@ -45,7 +45,7 @@ export default function ProjectsSection() {
               <FaExternalLinkAlt size={14} />
             </a>
           </div>
-          <p className="text-gray-700 dark:text-gray-300 mt-1 text-sm leading-relaxed">
+          <p className="text-gray-700 Projectsfont dark:text-gray-300 mt-1 text-sm leading-relaxed">
             An AI app that gives all the answers of your questions and lets you ask
             as many as you want for free, featuring great UX and recent chat access.
           </p>
@@ -71,7 +71,7 @@ export default function ProjectsSection() {
               <FaExternalLinkAlt size={14} />
             </a>
           </div>
-          <p className="text-gray-700 dark:text-gray-300 mt-1 text-sm leading-relaxed">
+          <p className="text-gray-700 Projectsfont dark:text-gray-300 mt-1 text-sm leading-relaxed">
             AI-Fiesta OpenSource is a multi-AI chat app that lets users send a single
             prompt to multiple AI models and compare their responses side by side.
           </p>
@@ -97,7 +97,7 @@ export default function ProjectsSection() {
               <FaExternalLinkAlt size={14} />
             </a>
           </div>
-          <p className="text-gray-700 dark:text-gray-300 mt-1 text-sm leading-relaxed">
+          <p className="text-gray-700 Projectsfont dark:text-gray-300 mt-1 text-sm leading-relaxed">
             A fun card generator app that lets you create, download, and share personalized cards easily.
           </p>
         </div>
@@ -122,7 +122,7 @@ export default function ProjectsSection() {
               <FaExternalLinkAlt size={14} />
             </a>
           </div>
-          <p className="text-gray-700 dark:text-gray-300 mt-1 text-sm leading-relaxed">
+          <p className="text-gray-700 Projectsfont dark:text-gray-300 mt-1 text-sm leading-relaxed">
             A password generator website offering strong and customizable password options.
             No data storage - full privacy ensured.
           </p>
