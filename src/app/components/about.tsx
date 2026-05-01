@@ -2,10 +2,10 @@
 
 export default function About() {
   return (
-    <div className="max-w-2xl mx-auto px-4 py-4 bg-white text-black dark:bg-[#19181A] dark:text-white transition-colors duration-300">
-      <h2 className="text-2xl font-[Bebas Neue] font-semibold mb-2">About</h2>
+    <div className="max-w-4xl mx-auto px-4 py-4 bg-white text-black dark:bg-[#19181A] dark:text-white transition-colors duration-300">
+      <h2 className="text-4xl font-bebas tracking-wide mb-4">About</h2>
 
-      <p className="text-gray-700 font-[Alfa Slab One] dark:text-gray-300 leading-relaxed">
+      <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
         Hi, I&apos;m Aditya - a 17 year old 12th grader passionate about web development
         and technology. I love building websites, exploring new tools, and improving
         my skills daily. I also have a foundation in DSA and enjoy competitive

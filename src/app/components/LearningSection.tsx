@@ -18,16 +18,16 @@ export default function LearningSection() {
   ];
 
   return (
-    <div className="max-w-2xl mx-auto px-4 py-5 bg-white text-black dark:bg-[#19181A] dark:text-white transition-colors duration-300">
-      <h2 className="text-2xl font-[Bebas Neue] font-semibold mb-2">From Where I Learn</h2>
+    <div className="max-w-4xl mx-auto px-4 py-5 bg-white text-black dark:bg-[#19181A] dark:text-white transition-colors duration-300">
+      <h2 className="text-4xl font-bebas tracking-wide mb-6">From Where I Learn</h2>
 
-      <div className="space-y-6">
+      <div className="space-y-8">
         {learningItems.map((item, index) => (
-          <div key={index} className="flex gap-3 items-start">
-            <FaArrowRight className="text-gray-500 dark:text-gray-400 mt-1" size={12} />
+          <div key={index} className="flex gap-4 items-start">
+            <FaArrowRight className="text-gray-500 dark:text-gray-400 mt-2" size={14} />
             <div>
-              <p className="font-semibold">{item.title}</p>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">{item.subtitle}</p>
+              <p className="text-xl font-bold font-poppins">{item.title}</p>
+              <p className="text-gray-600 dark:text-gray-300 text-base">{item.subtitle}</p>
             </div>
           </div>
         ))}
