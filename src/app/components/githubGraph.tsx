@@ -49,7 +49,7 @@ export default function ProofOfWorkCalendar({ data }: { data: CalendarData[] }) 
         blockMargin={4}
         fontSize={14}
         theme={{
-          light: ["#f0f0f0", "#c6e48b", "#7bc96f", "#239a3b", "#196127"], // updated light theme
+          light: ["#f0f0f0", "#c6e48b", "#7bc96f", "#239a3b", "#196127"],
           dark: ["#161B22", "#0E4429", "#006D32", "#26A641", "#39D353"],
         }}
         colorScheme="dark"

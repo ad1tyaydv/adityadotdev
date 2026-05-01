@@ -9,6 +9,24 @@ export default function ProjectsSection() {
 
         <div>
           <div className="flex items-center gap-2">
+            <h3 className="text-lg font-semibold">FastURL</h3>
+            <a
+              href="https://fasturl.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
+            >
+              <FaExternalLinkAlt size={14} />
+            </a>
+          </div>
+          <p className="text-gray-700 Projectsfont dark:text-gray-300 mt-1 text-sm leading-relaxed">
+            Transform long URLs into custom short links with advanced link performance analytics, branded url shortener features, and instant QR code generation. FastURL is your all-in-one link management platform for digital marketing links, and real time click tracking.
+            <br />
+          </p>
+        </div>
+
+        <div>
+          <div className="flex items-center gap-2">
             <h3 className="text-lg font-semibold">EncryptoNotes</h3>
             <a
               href="https://encryptonotes.adityayadav.website"
