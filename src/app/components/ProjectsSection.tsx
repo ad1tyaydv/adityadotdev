@@ -4,6 +4,12 @@ import Image from "next/image";
 export default function ProjectsSection() {
   const projects = [
     {
+      title: "findalternate",
+      description: "A platform designed to help you discover the best alternatives to software, apps, and SaaS products in seconds.",
+      link: "https://findalternate.com",
+      image: "/findalternate.png",
+    },
+    {
       title: "FastURL",
       description: "Transform long URLs into custom short links with advanced link performance analytics, branded url shortener features, and instant QR code generation.\n\nFastURL is your all-in-one link management platform for digital marketing links, and real time click tracking.",
       link: "https://fasturl.in",
@@ -14,20 +20,6 @@ export default function ProjectsSection() {
       description: "Create notes for studies or a post for X. Not even I can read them. All the content gets stored in db with full encryption, so no fear of data getting leaked.",
       link: "https://encryptonotes.adityayadav.website",
       image: "/encryptoNotes.png",
-    },
-    {
-      title: "Tamatar AI",
-      description: "An AI app that gives all the answers of your questions and lets you ask as many as you want for free, featuring great UX and recent chat access.",
-      github: "https://github.com/ad1tyaydv/Tamatar_AI",
-      link: "https://tamatar-ai.vercel.app/",
-      image: "/tamatarAI.png",
-    },
-    {
-      title: "AI-Fiesta Opensource",
-      description: "AI-Fiesta OpenSource is a multi-AI chat app that lets users send a single prompt to multiple AI models and compare their responses side by side.",
-      github: "https://github.com/ad1tyaydv/ai-fiesta-opensource",
-      link: "https://opensource-ai-fiesta.vercel.app/",
-      image: "/aiFiesta.png",
     },
     {
       title: "Card Generator",
@@ -52,10 +44,9 @@ export default function ProjectsSection() {
       <div className="space-y-20">
         {projects.map((project, index) => (
           <div 
-            key={index} 
+            key={index}
             className="group flex flex-col md:flex-row gap-8 items-start"
           >
-            {/* Image Container - Always on the left on desktop */}
             <div className="w-full md:w-1/2 overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 aspect-video relative shadow-sm">
               <Image 
                 src={project.image} 
@@ -65,7 +56,6 @@ export default function ProjectsSection() {
               /> 
             </div>
 
-            {/* Text Content - Always on the right on desktop */}
             <div className="w-full md:w-1/2 md:text-left">
               <div className="flex items-center gap-3 md:justify-start justify-center">
                 <h3 className="text-2xl font-bold font-poppins">{project.title}</h3>
